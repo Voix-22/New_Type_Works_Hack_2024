@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    line-height: 1;
+}
+
+/* Allow scrolling */
+body {
+    background-color: #c0c5c1;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-y: auto; /* Allow vertical scroll */
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar navigation */
+.sidebar-navigation {
+    position: fixed; /* Fix the sidebar to the left */
+    height: 100vh;
+    width: 80px;
+    background-color: #443850;
+    z-index: 1;
+}
+
+.sidebar-navigation ul {
+    text-align: center;
+    color: rgb(236, 241, 236);
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-navigation ul li {
+    padding: 28px 0;
+    cursor: pointer;
+    transition: all ease-out 120ms;
+    position: relative;
+}
+
+.sidebar-navigation ul li i {
+    display: block;
+    font-size: 24px;
+    color: white;
+    transition: all ease 450ms;
+}
+
+.sidebar-navigation ul li .tooltip {
+    display: inline-block;
+    position: absolute;
+    background-color: #443850;
+    padding: 8px 15px;
+    border-radius: 3px;
+    margin-top: -26px;
+    left: 90px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+
+.sidebar-navigation ul li .tooltip:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -4px;
+    top: 10px;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+}
+
+.sidebar-navigation ul li:hover {
+    background-color: #22252E;
+}
+
+.sidebar-navigation ul li:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sidebar-navigation ul li.active {
+    background-color: #22252E;
+}
+
+.sidebar-navigation ul li.active i {
+    color: #bbbe64;
+}
+
+/* Card container with margin for the sidebar */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 100px; /* Margin to account for the sidebar */
+    margin-right: 20px;
+}
+
+/* Individual card */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Card content */
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Card heading */
+.card-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #443850;
+    margin-bottom: 10px;
+}
+
+/* Card subheading */
+.card-subheading {
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Card description */
+.card-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}

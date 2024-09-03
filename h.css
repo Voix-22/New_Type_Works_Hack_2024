@@ -1,0 +1,52 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#section1 {
+    background-image: url('https://media.istockphoto.com/id/1325109117/vector/binary-code-background.jpg?s=612x612&w=0&k=20&c=IX-PcIE_-7q7ZWDLxE-rFh2JWS8_TB_M-ufdZUwNwIA=');
+}
+
+#section2 {
+    background-image: url('https://plus.unsplash.com/premium_photo-1661421687248-7bb863c60723?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29kaW5nJTIwYmx1ZXxlbnwwfHwwfHx8MA%3D%3D');
+}
+
+#section3 {
+    background-image: url('https://plus.unsplash.com/premium_photo-1661872817492-fd0c30404d74?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nJTIwYmx1ZXxlbnwwfHwwfHx8MA%3D%3D');
+}
+
+.content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.club-details, .alumni-thoughts {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.club-details h2, .alumni-thoughts h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.club-details p, .alumni-thoughts p {
+    font-size: 18px;
+    line-height: 1.6;
+}
